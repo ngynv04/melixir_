@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/nav_product"
+            android:title="@string/nav_product"
+            android:icon="@drawable/ic_cartt"/>
+        <item android:id="@+id/nav_brand"
+            android:title="@string/nav_brand"
+            android:icon="@drawable/ic_brand"/>
+    </group>
+
+    <item android:title="@string/nav_setting">
+        <menu>
+            <item android:id="@+id/nav_profile"
+                android:title="@string/nav_profile"
+                android:icon="@drawable/ic_person"/>
+            <item android:id="@+id/nav_change_password"
+                android:title="@string/nav_blog"
+                android:icon="@drawable/ic_lock"/>
+        </menu>
+    </item>
+</menu>

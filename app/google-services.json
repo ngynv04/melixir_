@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992928965802",
+    "project_id": "melixir-79a92",
+    "storage_bucket": "melixir-79a92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992928965802:android:3b4635a838694c59f69cd3",
+        "android_client_info": {
+          "package_name": "com.example.melixir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwzF9lmPuz7LUzHXW_kXaTjuNIyiV2clA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

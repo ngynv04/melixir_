@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--            android:id="@+id/collapsingToolbarLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:background="@color/menuItemBackground"-->
+<!--                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--                app:layout_constraintTop_toTopOf="parent"/>-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/logo"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/toolbar"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/toolbar" />-->
+
+<!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="380dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Vegan Herbaceous Gel Cleanser"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imgbrand1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Lifts excess oil without overdrying."
+                    android:textColor="@color/textColorMain"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtbrand1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="The ultimate solution for acne-prone skin."
+                    android:textColor="@color/textColorMain"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtbrand1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="380dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img"
+                    app:layout_constraintTop_toBottomOf="@+id/txtVegan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Vegan Deep Hydration Cream"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imgbrand2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="The ultimate nourishment for your dry skin,"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtbrand1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Powered by brightening Vitamin C."
+                    android:textColor="@color/textColorMain"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtbrand1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="380dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtVegan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Vegan Balancing Toner™"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imgbrand3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Delicate blend of calming plant extracts."
+                    android:textColor="@color/textColorMain"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtbrand3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="The perfect toner for sensitive skin."
+                    android:textColor="@color/textColorMain"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtbrand3" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <!--            </ViewFlipper>-->
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                android:id="@+id/video_view"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+
+        <!--                />-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

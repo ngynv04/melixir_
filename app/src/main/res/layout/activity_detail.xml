@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+<!--    <android.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="@color/menuItemBackground"-->
+<!--        android:navigationIcon="@drawable/ic_back"-->
+<!--        android:onClick="xulytrove"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:title="Chi tiết sản phẩm">-->
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/menuItemBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Chi tiết sản phẩm"
+        tools:layout_editor_absoluteX="0dp">
+        <!--                <ImageView-->
+        <!--                    android:layout_marginTop="5dp"-->
+        <!--                    android:layout_width="50dp"-->
+        <!--                    android:layout_height="50dp"-->
+        <!--                    android:src="@drawable/ic_back"-->
+        <!--                    android:onClick="xulytrove"-->
+        <!--                    android:contentDescription="Mô tả về hình ảnh của bạn"-->
+        <!--                    />-->
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="xulytrove"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back" />
+
+
+        <FrameLayout
+            android:id="@+id/frameGiohang"
+            android:layout_width="65dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp">
+
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/menu_sl"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="top|right" />
+
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/btnEdit"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="?android:attr/selectableItemBackground"-->
+            <!--                android:contentDescription="Hienthi"-->
+            <!--                android:padding="8dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:src="@drawable/ic_edit"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.045"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:contentDescription="123"-->
+            <!--                android:onClick="goViewGioHag"-->
+            <!--                android:src="@drawable/ic_cartt" />-->
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="goViewGioHag"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cartt" />
+
+
+        </FrameLayout>
+
+
+    </android.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:id="@+id/imgchitiet"
+            android:src="@drawable/img_3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtten"
+                android:text="Tên SP"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"/>
+            <TextView
+                android:id="@+id/txtgia"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#B22222"
+                android:textSize="30dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Số lượng:"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:background="@drawable/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnThemvaogiohang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/th_m_v_o_gi_h_ng"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="26dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/txtMotachitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

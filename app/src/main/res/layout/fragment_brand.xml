@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BrandFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/chu" />
+
+            <TextView
+                android:id="@+id/txtGioithieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Giới thiệu về melixir thân mến"
+                android:textColor="@color/textColorMain"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgbrand1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img1"
+                app:iss_corner_radius="20" />
+
+            <TextView
+                android:id="@+id/txtbrand1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="Không có thành phần khắc nghiệt"
+                android:textColor="@color/textColorMain"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgbrand1" />
+
+            <TextView
+                android:id="@+id/txtThanhPhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="melixir tạo ra các sản phẩm chỉ sử dụng các nguyên liệu thô, tất cả đều đã vượt qua các kiểm định nghiên cứu chuyên về chăm sóc da của thương hiệu bác sĩ da liễu. Chúng tôi đảm bảo sản phẩm của mình không chứa các thành phần có thể gây kích ứng cho làn da nhạy cảm."
+                android:textColor="@color/textColorMain"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtbrand1" />
+
+            <ImageView
+                android:id="@+id/imgbrand2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img2"
+                app:iss_corner_radius="20"
+                app:layout_constraintTop_toBottomOf="@+id/txtThanhPhan" />
+
+            <TextView
+                android:id="@+id/txtbrand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="Không thử nghiệm trên động vật"
+                android:textColor="@color/textColorMain"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgbrand2" />
+
+            <TextView
+                android:id="@+id/txtThuNghiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="Kể từ khi thành lập vào năm 2010, chúng tôi chưa thử nghiệm trên động vật. Chúng tôi không tin vào việc làm hại động vật vì mục đích thẩm mỹ và chúng tôi đang nỗ lực chấm dứt việc thử nghiệm trên động vật."
+                android:textColor="@color/textColorMain"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtbrand2" />
+
+            <ImageView
+                android:id="@+id/imgbrand3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img3"
+                app:iss_corner_radius="20"
+                app:layout_constraintTop_toBottomOf="@+id/txtbrand2" />
+
+            <TextView
+                android:id="@+id/txtbrand3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="Chất lượng cao, giá cả hợp lý"
+                android:textColor="@color/textColorMain"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgbrand3" />
+
+            <TextView
+                android:id="@+id/txtChatLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="Thay vì tiến hành PR và tiếp thị tốn kém, tên tuổi melixir đã được lan truyền thông qua những đánh giá hài lòng của khách hàng và truyền miệng. Chúng tôi đã và đang luôn nỗ lực hết mình để cung cấp những sản phẩm chất lượng cao nhất cho khách hàng với mức giá hợp lý."
+                android:textColor="@color/textColorMain"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtbrand3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/anh1"
+                    app:iss_corner_radius="20"
+                    app:layout_constraintTop_toBottomOf="@+id/txtbrand2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Câu chuyện Nguyên Liệu"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Hồn Việt trong chai"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center"
+                    android:text="Chúng tôi viết nên câu chuyện về hoa trái đặc hữu của Việt Nam, rất gần gũi và quen thuộc từ tên gọi, mùi hương và cả vùng đất sản sinh ra chúng."
+                    android:textColor="@color/textColorMain"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBrandmelixir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Như đã thấy trên ©melixirsskincare"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:id="@+id/imageSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="450dp"
+                            app:iss_auto_cycle="true"
+                            app:iss_corner_radius="10"
+                            app:iss_delay="1000"
+                            app:iss_period="1000"
+                            app:iss_title_background="@drawable/default_gradient"
+                            tools:ignore="MissingClass" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/menuItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Website thuộc quyền Công ty melixir"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:text="GCNĐKKD: 0315803699 | SỞ KẾ HOẠCH VÀ ĐẦU TƯ TP. HỒ CHÍ MINH CẤP LẦN ĐẦU NGÀY 22/07/2019"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="13sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:text="14D1, KHU PHỐ 1A, ĐƯỜNG QUỐC LỘ 1A, PHƯỜNG TÂN THỚI HIỆP, QUẬN 12, TP. HỒ CHÍ MINH, VIỆT NAM"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="13sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:text="ĐIỆN THOẠI: 19009300"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="13sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:text="EMAIL: melixir.com"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="13sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Sản xuất và chịu trách nhiệm về hàng hóa"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Công ty TNHH melixir"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:text="GCNĐKKD: 1101983767 / SỞ KẾ HOẠCH VÀ ĐẦU TƯ TỈNH LONG AN CẤP LẦN ĐẦUNGÀY: 15/04/2021"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="13sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:text="LÔ LF24A-LF25 ĐƯỜNG SỐ 2, KHU CÔNG NGHIỆP XUYÊN Á, XÃ MỸ HẠNH BẮC, HUYỆN ĐỨC HÒA, TỈNH LONG AN, VIỆT NAM"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="13sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:text="EMAIL: melixir.com"
+                    android:textColor="@color/textColorMain"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/congthuong" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

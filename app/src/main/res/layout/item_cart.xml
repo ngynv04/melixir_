@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            android:id="@+id/item_cart_img"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_cart_tensp"
+                android:text="Tên sản phẩm"/>
+
+            <LinearLayout
+                android:weightSum="18"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:text="Số lượng: "
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:weightSum="8"
+                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_remove"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_cart_remove"/>
+                        <TextView
+                            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_cart_soluong"
+                            android:text="1"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+                        <ImageView
+                            android:layout_weight="2"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_add"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_cart_add"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_cart_gia"
+                    android:textColor="#B22222"
+                    android:textSize="20sp"
+                    android:text="15000"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

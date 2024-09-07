@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="menuItemBackground">#e6e3de</color>
+    <color name="textColorMain">#6f6f6f</color>
+    <color name="btnColor">#6f6f6f</color>
+    <color name="edtColor">#f5f5f5</color>
+    <color name="textLink">#05a</color>
+    <color name="ff2">#EED5A9</color>
+</resources>

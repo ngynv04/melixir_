@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity">
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/menuItemBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Chi tiết sản phẩm"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="xulytrove"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back" />
+
+
+        <FrameLayout
+            android:id="@+id/frameGiohang"
+            android:layout_width="65dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp">
+
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/menu_sl"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="top|right" />
+
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:contentDescription="123"-->
+            <!--                android:onClick="goViewGioHag"-->
+            <!--                android:src="@drawable/ic_cartt" />-->
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="goViewGioHag"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cartt" />
+
+
+        </FrameLayout>
+
+
+    </android.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Hienthi"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EEEEEE"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <AutoCompleteTextView
+            android:id="@+id/texttim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tìm kiếm"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:completionThreshold="1" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#6f6f6f"
+            android:text="Tìm"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/chontim"
+            app:layout_constraintStart_toEndOf="@+id/texttim" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:padding="8dp"
+        android:background="#EEEEEE"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/edtMinPrice"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:hint="Min Price"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/chontim"
+            app:layout_constraintEnd_toStartOf="@+id/edtMaxPrice"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/edtMaxPrice"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Max Price"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/chontim"
+            app:layout_constraintEnd_toStartOf="@+id/btnSearchGia"
+            app:layout_constraintStart_toEndOf="@+id/edtMinPrice" />
+
+        <Button
+            android:id="@+id/btnSearchGia"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#6f6f6f"
+            android:text="Tìm giá"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/chontim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edtMaxPrice" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+    <ListView
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:divider="#ffffff"
+        android:dividerHeight="8dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
